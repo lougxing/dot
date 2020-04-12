@@ -17,6 +17,8 @@ export HISTCONTROL=ignoredups
 export HISTIGNORE="&:bg:fg:ll:h"
 export HISTTIMEFORMAT="%Y%m%d-%H:%M:%S > "
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 #mac ls colors
 export LSCOLORS=Exfxhxhxgxhxhxgxgxbxbx
 export CLICOLOR=1
