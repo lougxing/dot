@@ -1,4 +1,4 @@
-if [[ $(whoami) == "$USERNMAE ]];then
+if [[ $(whoami) == "$USERNMAE" ]];then
 #   export GOROOT=$HOME/.local/go/root
 #   export PATH=$GOROOT/bin:$PATH
 

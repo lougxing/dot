@@ -7,7 +7,7 @@ fi
 
 [ -d "$HOME/.local" ] || mkdir $HOME/.local
 
-subdirs=("bsh.d" "vim.d" "git.d")
+subdirs=("bsh.d")
 
 for dir in ${subdirs[*]}; do
     cd $dir && sh dep.sh && cd ..
