@@ -5,7 +5,7 @@ if [[ "$type" == "MSYS_NT" ]];then
 fi
 
 export BASH_HOME=$(dirname "$(readlink $HOME/.bashrc)")
-export ABOX_HOME=$(dirname $BASH_HOME)
+export GBOX_HOME=$(dirname $BASH_HOME)
 
 dirs=$(ls $BASH_HOME)
 for dir in $dirs; do

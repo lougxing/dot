@@ -17,7 +17,7 @@ endfunction
 " On Windows, also use '.vim' instead of 'vimfiles'; this makes synchronization
 " across (heterogeneous) systems easier.
 
-let g:exvim_custom_path= $ABOX_HOME."/vim.d"
+let g:exvim_custom_path= $GBOX_HOME."/vim.d"
 
 if !exists('g:exvim_custom_path')
     if WINDOWS()
