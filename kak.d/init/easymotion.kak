@@ -1,0 +1,1 @@
+plug "danr/kakoune-easymotion"
