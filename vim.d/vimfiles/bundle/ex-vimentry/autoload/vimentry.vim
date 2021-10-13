@@ -84,7 +84,7 @@ function vimentry#write_default_template()
                 \ "",
                 \ "-- ex-project Options:",
                 \ s:write_default( "enable_project_browser", "true", "{ true, false }" ),
-                \ s:write_default( "project_browser", "ex", "{ ex, nerdtree }" ),
+                \ s:write_default( "project_browser", "nerdtree", "{ ex, nerdtree }" ),
                 \ "",
                 \ "-- ex-gsearch Options:",
                 \ s:write_default( "enable_gsearch", "true", "{ true, false }" ),

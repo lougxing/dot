@@ -51,7 +51,7 @@ function exconfig#apply()
 
     let g:exvim_project_name = project_name
     let g:exvim_project_root = cwd
-    let g:exvim_folder = './.exvim.'.project_name
+    let g:exvim_folder = "./.".project_name.'.vimcache/'
 
     " set parent working directory
     silent exec 'cd ' . fnameescape(cwd)
@@ -847,13 +847,13 @@ function exconfig#update_exvim_files()
         let shell_and = ' & '
         let shell_pause = ' && pause'
         let suffix = '.bat'
-        let path = '.\.exvim.'.g:exvim_project_name.'\'
+        let path = ".\.".g:exvim_project_name.'.vimcache'.'\'
     else
         let shell_exec = 'sh'
         let shell_and = ' && '
         let shell_pause = ''
         let suffix = '.sh'
-        let path = './.exvim.'.g:exvim_project_name.'/'
+        let path = "./.".g:exvim_project_name.'.vimcache'.'/'
     endif
 
     let cmd = ''
