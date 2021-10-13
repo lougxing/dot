@@ -1,0 +1,14 @@
+evaluate-commands %sh{
+    init_dir=${kak_config:?}/init
+    config_files=`ls ${init_dir}`
+
+    for file in $config_files; do
+        printf "%s" "
+            try %{
+                source %{${init_dir}/$file}
+            } catch %{
+                echo -debug %val{error}
+            }
+        "
+    done
+}

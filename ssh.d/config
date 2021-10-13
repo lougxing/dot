@@ -1,5 +1,6 @@
 TCPKeepAlive=yes
 ServerAliveInterval 10
+StrictHostKeyChecking no
 
 user [default username]
 Host [simple hostname]
