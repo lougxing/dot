@@ -5,5 +5,4 @@ plug "danr/kakoune-easymotion" config %{
     face global EasyMotionSelected yellow+b
 }
 
-map global normal <a-,> ': easy-motion-char<ret>'
-map global normal <c-j> ': easy-motion-char<ret>'
+map global normal <a-j> ': easy-motion-char<ret>'
