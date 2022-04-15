@@ -37,7 +37,14 @@ Plug 'nvim-treesitter/nvim-treesitter-refactor'
 
 Plug 'derekwyatt/vim-fswitch'
 Plug 'preservim/tagbar'
-Plug 'fatih/vim-go'
+
+" vim-go {
+        Plug 'fatih/vim-go'
+        let g:go_def_mode='gopls'
+        let g:go_info_mode='gopls'
+        au filetype go inoremap <buffer> . .<C-x><C-o>
+
+" }
 
 "  easy jump any where " {
 	Plug 'easymotion/vim-easymotion'
@@ -184,6 +191,7 @@ set virtualedit=block
 set autoindent
 set cindent
 set laststatus=2
+let g:tagbar_ctags_bin="/opt/homebrew/bin/ctags"
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 set statusline=%<%F\ %h%m%r%=%{tagbar#currenttag('%s\ ','','f')}%-.(%l,%c%V%)\ %P
