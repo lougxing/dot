@@ -38,6 +38,8 @@ Plug 'preservim/tagbar'
         let g:go_def_mode='gopls'
         let g:go_info_mode='gopls'
         au filetype go inoremap <buffer> . .<C-x><C-o>
+        "let g:go_gopls_options = ['-listen.timeout=0']
+        au FileType go nmap <leader>d <Plug>(go-def)
 
 " }
 
