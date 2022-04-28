@@ -5,7 +5,7 @@
 "|_|  |_| |_|   |_| \_|  \_/  |___|_|  |_|_| \_\\____|
 
 
-"let g:go_debug=['lsp']
+
 
 " ===
 " === Auto load for first time uses
@@ -35,6 +35,7 @@ Plug 'preservim/tagbar'
 
 " vim-go {
         Plug 'fatih/vim-go'
+	"let g:go_debug=['lsp']
         let g:go_def_mode='gopls'
         let g:go_info_mode='gopls'
         au filetype go inoremap <buffer> . .<C-x><C-o>
