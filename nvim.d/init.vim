@@ -18,6 +18,7 @@ endif
 "load plugins
 call plug#begin('$HOME/.config/nvim/plugins')
 Plug 'tomasr/molokai'
+Plug 'bling/vim-bufferline'
 
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-treesitter/nvim-treesitter-refactor'
