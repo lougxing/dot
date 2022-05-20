@@ -48,10 +48,11 @@ Plug 'preservim/tagbar'
 	Plug 'easymotion/vim-easymotion'
 	let g:EasyMotion_startofline = 0
 	let g:EasyMotion_verbose = 0
-	map <C-j> <Plug>(easymotion-j)
-	map <C-k> <Plug>(easymotion-k)
-	map <C-j> <Plug>(easymotion-f)
-	map <C-k> <Plug>(easymotion-F)
+	"map <C-j> <Plug>(easymotion-j)
+	"map <C-k> <Plug>(easymotion-k)
+	"map <C-j> <Plug>(easymotion-f)
+	"map <C-k> <Plug>(easymotion-F)
+	nmap s <Plug>(easymotion-overwin-f2)
 " }
 
 
@@ -138,6 +139,7 @@ func! CompileRunGcc()
 		:term go run .
 	endif
 endfunc
+let mapleader=" "
 set expandtab
 set tabstop=4
 set shiftwidth=4
