@@ -49,9 +49,18 @@ Plug 'ziontee113/syntax-tree-surfer'
 
 "  highlight {
     Plug 'nvim-treesitter/nvim-treesitter'
-	au FileType go TSBufToggle highlight
+    au FileType go TSBufToggle highlight
 " }
 
+"  vim-go {
+    Plug 'fatih/vim-go'
+   "let g:go_debug=['lsp']
+    let g:go_def_mode='gopls'
+    let g:go_info_mode='gopls'
+    au filetype go inoremap <buffer> . .<C-x><C-o>
+    "let g:go_gopls_options = ['-listen.timeout=0']
+    au FileType go nmap <leader>d <Plug>(go-def)
+" }
 
 "  select the closest text object {
    "<Enter>
@@ -195,8 +204,4 @@ let mapleader=" "
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 set statusline=%<%F\ %h%m%r%=%{tagbar#currenttag('%s\ ','','f')}%-.(%l,%c%V%)\ %P
 
-"let g:go_debug=['lsp']
-"let g:go_gopls_options = ['-listen.timeout=0']
-au filetype go inoremap <buffer> . .<C-x><C-o>
-au FileType go nmap <leader>d <Plug>(go-def)
 
