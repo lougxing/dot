@@ -39,7 +39,7 @@ Plug 'RRethy/vim-illuminate'
 Plug 'airblade/vim-rooter'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 Plug 'ziontee113/syntax-tree-surfer'
-
+Plug 'junegunn/goyo.vim'
 
 "  show buffers {
 	Plug 'bling/vim-bufferline'
@@ -157,8 +157,8 @@ set secure
 set hidden
 set noexpandtab
 set autoindent
-set list
-set listchars=tab:\|\ ,trail:▫
+"set list
+"set listchars=tab:\|\ ,trail:▫
 set scrolloff=4
 set ttimeoutlen=0
 set notimeout
@@ -200,6 +200,8 @@ set autoindent
 set cindent
 set laststatus=2
 let mapleader=" "
+set mouse=""
+let g:tagbar_ctags_bin = '/opt/homebrew/bin/ctags'
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 set statusline=%<%F\ %h%m%r%=%{tagbar#currenttag('%s\ ','','f')}%-.(%l,%c%V%)\ %P
